@@ -1,0 +1,140 @@
+.mapModal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mapModal .mapModal-con {
+  /* flex: 0 1 700px; */
+  /* height: 450px; */
+  background-color: black;
+  position: relative;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  box-sizing: border-box;
+}
+.mapModal .mapModal-con .maptitle{
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0;
+  border-bottom: 1px solid #f4f6f8;
+}
+.mapModal .mapModal-con .maptitle h2{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.mapModal .mapModal-con .maptitle h2 img{
+  width: 120px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+.mapModal .mapModal-con .maptitle span.close{
+  font-size: 20px;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.mapModal .mapModal-con .mapitem{
+  display: flex;
+  gap: 1vw;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+}
+
+.mapModal .mapModal-con .mapitem #map {
+  width: 300px;
+  height: 300px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.mapModal .mapModal-con .mapitem .maptop{
+  flex: 2;
+  width: 100%;
+}
+.mapModal .mapModal-con .mapitem .maptop img{
+  width: 100%;
+  display: block;
+}
+.mapModal .mapModal-con .mapitem .mapbottom{
+  background-color: #1d1d1d3b;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vw;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px white;
+}
+.mapModal .mapModal-con .mapitem .mapbottom span{
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail{
+  display: flex;
+  justify-content: space-between;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul li{
+  color: white;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul.mapName li:last-child img{
+  width: 20px;
+  height: 20px;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul.mapName{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  font-size: 14px;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul.nameDetail{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  font-weight: lighter;
+  font-size: 13px;
+}
+.mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul.nameDetail a{
+  font-size: 13px;
+  color: #1787ff;
+}
+@media (max-width:768px){
+  .mapModal .mapModal-con{
+    width: 80vw;
+    
+  }
+  .mapModal .mapModal-con .mapitem{
+    display: flex;
+    flex-direction: column;
+  }
+  .mapModal .mapModal-con .mapitem .maptop{
+    flex: 2;
+  }
+  .mapModal .mapModal-con .mapitem .mapbottom{
+    flex: 1;
+    gap: 5px;
+  }
+  .mapModal .mapModal-con .mapitem .mapbottom .mapDetail ul.mapName li:last-child img{
+    width: 16px;
+    height: 16px;
+  }
+}

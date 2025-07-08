@@ -1,0 +1,611 @@
+.movieModal {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.521);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1999;
+}
+.movieModal .movieModal-con{
+    width: 50vw;
+    height: 600px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background-color: rgb(3, 3, 3);
+    padding: 15px;
+    gap: 10px;
+}
+.movieModal .movieModal-con span.close{
+    padding: 0 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    cursor: pointer;
+}
+.movieModal .movieModal-con .top{
+    display: none;
+}
+.movieModal .movieModal-con .top2{
+    width: 30vw;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.movieModal .movieModal-con .top2 img{
+    width: 500px;
+    display: block;
+    height: 350px;
+}
+.movieModal .movieModal-con .top-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 120%;
+}
+.movieModal .movieModal-con .top-title span{
+    width: 100%;
+}
+.movieModal .movieModal-con .bottom{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items:baseline;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.movieModal .movieModal-con .bottom li:nth-child(1){
+    width: 30px;
+    height: 30px;
+    background-color: #373737;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+.movieModal .movieModal-con .bottom span:nth-child(1){
+ font-size: 32px;
+}
+.movie-comment{
+    height: 60px;
+    overflow-y: auto;
+}
+.price span { 
+    display: flex;
+    justify-content: flex-end;
+    align-items:end;
+
+}
+.sub-moviemodal{
+    width: 100%;
+}
+.sub-moviemodal .sub-moviemodal-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sub-moviemodal .sub-moviemodal-con >span{
+    /* padding: 10px; */
+}
+.sub-moviemodal ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+
+
+}
+.sub-moviemodal ul li .itemImg {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+.sub-moviemodal ul li .itemImg img{
+    width: 120px;
+    height: 80px;
+
+}
+.sub-moviemodal ul li .itemImg  .item-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.sub-moviemodal ul li .itemImg  .item-detail span:nth-child(1){
+    font-size: 110%
+}
+.sub-moviemodal ul li .itemImg  .item-detail span:nth-child(2){
+    height: 40px;
+    overflow-y: auto;
+    font-size: 80%;
+
+}
+
+.price span li{
+background-color: rgb(255, 0, 85, 1);
+border-radius: 5px 5px 5px 5px;
+padding: 3px;
+}
+
+.movie-payment{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.movie-payment li{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 0, 85, 1);
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.movie-price{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.movie-price span li{
+    background-color: rgb(255, 0, 85, 1);
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+}
+.movie-comment{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.movieCount button{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 85, 1);
+    color: #ffffff;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.moviemodal1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 2099;
+    left: 0;
+    top: 0;
+}
+.moviemodal1 .moviemodal1-con{
+    padding: 20px;
+   width: 350px;
+   height: 170px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.moviemodal1 .moviemodal1-con .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.moviemodal1 .moviemodal1-con .button button{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 769px){
+    .movieModal {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.521);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1999;
+    }
+    .movieModal .movieModal-con{
+        width: 50vw;
+        height: 600px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        background-color: rgb(3, 3, 3);
+        padding: 15px;
+        gap: 10px;
+    }
+    .movieModal .movieModal-con span.close{
+        padding: 0 10px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .movieModal .movieModal-con .top{
+        width: 40vw;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .movieModal .movieModal-con .top img{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .movieModal .movieModal-con .top-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 120%;
+    }
+    .movieModal .movieModal-con .top-title span{
+        width: 100%;
+    }
+    .movieModal .movieModal-con .bottom{
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items:baseline;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 80%;
+    }
+    .movieModal .movieModal-con .bottom li:nth-child(1){
+        width: 30px;
+        height: 30px;
+        background-color: #373737;
+        border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .movieModal .movieModal-con .bottom span:nth-child(1){
+     font-size: 32px;
+    }
+    .movie-comment{
+        height: 60px;
+        overflow-y: auto;
+        font-size: 80%;
+
+    }
+    .price span { 
+        display: flex;
+        justify-content: flex-end;
+        align-items:end;
+    
+    }
+    .movieModal .movieModal-con .top{
+        display: none;
+    }
+    .sub-moviemodal{
+        width: 100%;
+    }
+    .sub-moviemodal .sub-moviemodal-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .sub-moviemodal .sub-moviemodal-con >span{
+        /* padding: 10px; */
+    }
+    .sub-moviemodal ul{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow-y: auto;
+    
+    
+    }
+    .sub-moviemodal ul li .itemImg {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+    }
+    .sub-moviemodal ul li .itemImg img{
+        width: 120px;
+        height: 80px;
+    
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail span:nth-child(1){
+        font-size: 90%
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail span:nth-child(2){
+        height: 30px;
+        overflow-y: auto;
+        font-size: 70%;
+    
+    }
+    
+    .price span li{
+    background-color: rgb(255, 0, 85, 1);
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    }
+    
+    .movie-payment{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .movie-payment li{
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 0, 85, 1);
+        border-radius: 5px 5px 5px 5px;
+        cursor: pointer;
+        padding: 3px;
+        font-size: 80%;
+
+    }
+    
+    .movie-price{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .movie-price span li{
+        background-color: rgb(255, 0, 85, 1);
+        border-radius: 5px 5px 5px 5px;
+        padding: 3px;
+        font-size: 80%;
+
+    }
+    .movie-comment{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .movieCount button{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 0, 85, 1);
+        color: #ffffff;
+        border-radius: 5px 5px 5px 5px;
+    }
+}
+@media (max-width: 420px){
+    .movieModal {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.521);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1999;
+    }
+    .movieModal .movieModal-con{
+        width: 70vw;
+        height: 500px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        background-color: rgb(3, 3, 3);
+        padding: 15px;
+        gap: 10px;
+    }
+    .movieModal .movieModal-con span.close{
+        padding: 0 10px;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .movieModal .movieModal-con .top2{
+        width: 50vw;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .movieModal .movieModal-con .top img{
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+    .movieModal .movieModal-con .top-title{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 120%;
+    }
+    .movieModal .movieModal-con .top-title span{
+        width: 100%;
+    }
+    .movieModal .movieModal-con .bottom{
+        width: 100%;
+        height: 25px;
+        display: flex;
+        align-items:baseline;
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 80%;
+    }
+    .movieModal .movieModal-con .bottom li:nth-child(1){
+        width: 30px;
+        height: 30px;
+        background-color: #373737;
+        border-radius: 8px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+    }
+    .movieModal .movieModal-con .bottom span:nth-child(1){
+     font-size: 32px;
+    }
+    .movie-comment{
+        height: 60px;
+        overflow-y: auto;
+        font-size: 80%;
+
+    }
+    .price span { 
+        display: flex;
+        justify-content: flex-end;
+        align-items:end;
+    
+    }
+    .sub-moviemodal{
+        width: 100%;
+    }
+    .sub-moviemodal .sub-moviemodal-con{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .sub-moviemodal .sub-moviemodal-con >span{
+        /* padding: 10px; */
+    }
+    .sub-moviemodal ul{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction:row;
+        gap: 10px;
+        overflow-y: auto;
+    
+    
+    }
+    .sub-moviemodal ul li .itemImg {
+        width: 55px;
+        height: 80px;
+        display: flex;
+        gap: 15px;
+    }
+    .sub-moviemodal ul li .itemImg img{
+        width: 100%;
+        display: block;
+    
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail{
+        display: none;
+
+        flex-direction: column;
+        gap: 5px;
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail span:nth-child(1){
+        font-size: 90%
+    }
+    .sub-moviemodal ul li .itemImg  .item-detail span:nth-child(2){
+        height: 30px;
+        overflow-y: auto;
+        font-size: 70%;
+    
+    }
+    
+    .price span li{
+    background-color: rgb(255, 0, 85, 1);
+    border-radius: 5px 5px 5px 5px;
+    padding: 3px;
+    }
+    
+    .movie-payment{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .movie-payment li{
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(255, 0, 85, 1);
+        border-radius: 5px 5px 5px 5px;
+        cursor: pointer;
+        padding: 3px;
+        font-size: 80%;
+
+    }
+    
+    .movie-price{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .movie-price span li{
+        background-color: rgb(255, 0, 85, 1);
+        border-radius: 5px 5px 5px 5px;
+        padding: 3px;
+        font-size: 80%;
+
+    }
+    .movie-comment{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .movieCount button{
+        width: 20px;
+        height: 20px;
+        background-color: rgb(255, 0, 85, 1);
+        color: #ffffff;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+}

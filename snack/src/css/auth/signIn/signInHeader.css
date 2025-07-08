@@ -1,0 +1,53 @@
+.signIn-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.signIn-header .signIn-header-con {
+  flex: 0 1 1600px;
+  /* height: 100px; */
+
+  padding: 60px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.signIn-header .signIn-header-con h1.logo {
+  width: 260px;
+  /* height: 80px; */
+}
+
+.signIn-header .signIn-header-con h1.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.signIn-header .signIn-header-con .signInbtn {
+  display: flex;
+
+  border: 2px solid #fff;
+
+  padding: 0.1vw 0.2vw;
+  box-sizing: border-box;
+}
+
+.signIn-header .signIn-header-con .signInbtn a {
+  /* line-height:  100px; */
+  /* height: 100px; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 2px solid #fff; */
+
+  color: inherit;
+}
+
+
+

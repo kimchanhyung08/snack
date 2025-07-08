@@ -1,0 +1,96 @@
+@import url(./css/common/reset.css);
+@import url(./css/common/header.css);
+@import url(./css/common/headerNav.css);
+@import url(./css/common/content.css);
+@import url(./css/common/sideBar.css);
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+@import url(./css/webtoon/webtoonIndex.css);
+@import url(./css/payment/paymentIndex.css);
+@import url(./css/drama/dramaPage.css);
+@import url(./css/cart/cart.css);
+@import url(./css/anime/animeIndex.css);
+@import url(./css/auth/auth.css);
+@import url(./css/main/MainIndex.css);
+@import url(./css/movie/movie.css);
+@import url(./css/movie/moviemodal.css);
+@import url(./css/main/MainModal.css);
+@import url(./css/admin/admin-left.css);
+@import url(./css/admin/admin-right.css);
+@import url(./css/admin/admin-content.css);
+@import url(./css/admin/admin-product.css);
+@import url(./css/cart/cart.css);
+@import url(./css/admin/admin-product-update.css);
+@import url(./css/admin/admin-product-detail.css);
+@import url(./css/admin/admin-product-add.css);
+@import url(./css/admin/adminIndex.css);
+@import url(./css/admin/admin-member.css);
+@import url(./css/admin/admin-member-update.css);
+@import url(./css/admin/admin-member-detail.css);
+@import url(./css/admin/admin-addmodal.css);
+@import url(./css/auth/member/payment/payment.css);
+@import url(./css/auth/member/payment/paymentDetail.css);
+@import url(./css/api/mapModal.css);
+@import url(./css/api/kakaoApi.css);
+@import url(./css/admin/admin-payment.css);
+@import url(./css/admin/admin-payment-modal.css);
+@import url(./css/admin/admin-payment-detail.css);
+@import url(./css/admin/admin-cartList.css);
+@import url(./css/admin/admin-orderplace.css);
+@import url(./css/admin/admin-orderplace-detail.css);
+@import url(./css/admin/admin-orderplace-modal3.css);
+
+
+#root {
+  background-color: black;
+  color: white;
+}
+
+.layout, .admin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layout > .left, .admin > .admin-left {
+  flex: 0 0 260px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.layout > .right, .admin > .admin-right {
+  flex: 1;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+@media (max-width: 1024px) {
+  .layout , .admin {
+    flex-direction: column-reverse;
+  }
+
+  .layout .left, .admin .admin-left {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 99;
+    flex: 0 0 80px;
+  }
+
+  .layout .right, .admin .admin-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+
+  .layout , .admin {
+    height: -webkit-fill-available;
+  }
+}

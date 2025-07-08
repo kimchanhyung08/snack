@@ -1,0 +1,308 @@
+.movie{
+  width: 100%;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+.movie .movie-con{
+  width: 100%;
+  box-sizing: border-box;
+}
+.movie .movie-con>h1{
+  padding: 10px 20px;
+  /* border-bottom: 1px solid #ffffff; */
+  
+}
+
+
+
+.movie .movie-con .comedy{
+  /* padding:  30px; */
+  width: 100%;
+  }
+.movie .movie-con .comedy h1{
+  padding: 10px 20px;
+
+}
+.movie .movie-con .comedy ul{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-auto-rows: auto;
+  gap: 2vw;
+}
+.movie .movie-con .comedy ul li{
+  width: 100%;
+  border-radius: 10px ;
+}
+.movie .movie-con .comedy ul li img{
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  }
+
+.movie .movie-con .comedy ul li img:hover{
+  transform: translateY(-5%);
+}
+
+
+.movie .movie-con .action{
+  padding: 20px 0px;
+  width: 100%;
+  }
+  .movie .movie-con .action h1{
+    padding: 10px 20px;
+
+  }
+ 
+.movie .movie-con .action ul{
+  padding: 20px;
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-auto-rows: auto;
+  gap: 15px;
+}
+.movie .movie-con .action ul li img{
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  }
+  
+  .movie .movie-con .action ul li img:hover{
+    transform: translateY(-5%);
+  }
+  
+
+
+
+.movie .movie-con .fantazy{
+  padding: 20px 0px;
+  width: 100%;
+  }
+  .movie .movie-con .fantazy h1{
+    padding: 10px 20px;
+
+  }
+ 
+.movie .movie-con .fantazy ul{
+  padding: 20px;
+  
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-auto-rows: auto;
+  gap: 15px;
+}
+.movie .movie-con .fantazy ul li img{
+  transition: all 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  }
+  
+  .movie .movie-con .fantazy ul li img:hover{
+    transform: translateY(-5%);
+  }
+  
+
+
+.movie .movie-con .thriller{
+  padding: 20px 0px;
+  width: 100%;
+  }
+  .movie .movie-con .thriller h1{
+    padding: 10px 20px;
+
+  }
+ 
+.movie .movie-con .thriller ul{
+  /* padding: 20px; */
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(1,auto);
+  grid-auto-rows: 200px;
+  gap: 2vw;
+}
+.movie .movie-con .thriller ul li img{
+  transition: all 0.3s;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  }
+  
+  .movie .movie-con .thriller ul li img:hover{
+    transform: translateY(-5%);
+  }
+  @media (max-width: 769px){
+
+    .movie{
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      /* overflow: hidden; */
+    }
+    .movie .movie-con{
+      width: 100%;
+      height: calc(100vh - 160px);
+      box-sizing: border-box;
+    }
+    .movie .movie-con>h1{
+      padding: 10px 20px;
+      /* border-bottom: 1px solid #ffffff; */
+      font-size: x-large;
+      
+    }
+    
+    
+    
+    .movie .movie-con .comedy{
+      /* padding:  30px; */
+      width: 100%;
+      }
+    .movie .movie-con .comedy h1{
+      padding: 10px 20px;
+      font-size: x-large;
+    
+    }
+    .movie .movie-con .comedy ul{
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,1fr);
+      grid-auto-rows: auto;
+      gap: 2vw;
+    }
+    .movie .movie-con .comedy ul li{
+      width: 100%;
+      border-radius: 10px ;
+    }
+    .movie .movie-con .comedy ul li img{
+      transition: all 0.3s;
+      width: 100%;
+      border-radius: 10px;
+      }
+    
+    .movie .movie-con .comedy ul li img:hover{
+      transform: translateY(-5%);
+    }
+    
+    
+    .movie .movie-con .action{
+      padding: 10px 0px;
+      width: 100%;
+      }
+      .movie .movie-con .action h1{
+        padding: 10px 20px;
+        font-size: x-large;
+    
+      }
+     
+    .movie .movie-con .action ul{
+      padding: 10px;
+      
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,1fr);
+      grid-auto-rows: auto;
+      gap: 15px;
+    }
+    .movie .movie-con .action ul li img{
+      transition: all 0.3s;
+      width: 100%;
+      border-radius: 10px;
+      }
+      
+      .movie .movie-con .action ul li img:hover{
+        transform: translateY(-5%);
+      }
+      
+    
+    
+    
+    .movie .movie-con .fantazy{
+      padding: 10px 0px;
+      width: 100%;
+      }
+      .movie .movie-con .fantazy h1{
+        padding: 10px 20px;
+        font-size: x-large;
+    
+      }
+     
+    .movie .movie-con .fantazy ul{
+      padding: 10px;
+      
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,1fr);
+      grid-auto-rows: auto;
+      gap: 15px;
+    }
+    .movie .movie-con .fantazy ul li img{
+      transition: all 0.3s;
+      width: 100%;
+      border-radius: 10px;
+      }
+      
+      .movie .movie-con .fantazy ul li img:hover{
+        transform: translateY(-5%);
+      }
+      
+    
+    
+    .movie .movie-con .thriller{
+      padding: 10px 0px;
+      width: 100%;
+      }
+      .movie .movie-con .thriller h1{
+        padding: 10px 20px;
+        font-size: x-large;
+    
+      }
+     
+    .movie .movie-con .thriller ul{
+      /* padding: 20px; */
+      padding: 10px;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,auto);
+      grid-auto-rows: 100px;
+      gap: 2vw;
+    }
+    .movie .movie-con .thriller ul li img{
+      transition: all 0.3s;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      }
+      
+      .movie .movie-con .thriller ul li img:hover{
+        transform: translateY(-5%);
+      }
+
+
+  }
+  @media (max-width: 460px){
+    .movie .movie-con .comedy h1{
+      padding: 10px 10px;
+      font-size: large;
+    
+    }
+    .movie .movie-con .action h1{
+      padding: 10px 10px;
+      font-size: large;
+    
+    }
+    .movie .movie-con .fantazy h1{
+      padding: 10px 10px;
+      font-size: large;
+    
+    }
+    .movie .movie-con .thriller h1{
+      padding: 10px 10px;
+      font-size: large;
+    
+    }
+  }

@@ -1,0 +1,449 @@
+.animeModal {
+  width: 100%;
+  
+  height: 100vh;
+  /* max-height: 100vh; */
+
+  background-color: rgba(205, 205, 205, 0.45);
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 6000;
+  /* overflow: auto; */
+
+}
+
+.animeModal .animeModal-con {
+  /* flex: 0 1 1200px; */
+  width: 62.5vw;
+  
+ 
+  /* height: auto; */
+  height: 800px;
+  background-color: #000;
+  color: #fff;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  
+
+  /* padding-bottom: 300px; */
+  box-sizing: border-box;
+
+  overflow: auto;
+
+  position: relative;
+}
+
+.animeModal-con::-webkit-scrollbar {
+  display: none;
+}
+
+.animeModal .animeModal-con .modal-wrap {
+  width: 52.08vw; /* 1000px*/
+ 
+  height: 700px;
+
+  /* position: relative; */
+
+  /* padding: 300px 0;s */
+}
+
+
+
+.animeModal .animeModal-con .modal-wrap .top {
+
+  width: 100%;
+  /* height: 562.5px; */
+  height: auto;
+ 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  position: relative;
+
+  box-sizing: border-box;
+
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+
+}
+
+
+
+
+.animeModal .animeModal-con .top img {
+  display: block;
+  width: 100%;
+ 
+
+  z-index: 998;
+
+  
+  
+  mask-image: linear-gradient(to bottom, rgba(22, 22, 22, 1), rgba(22, 22, 22, 0));
+}
+
+.animeModal .animeModal-con .top h2 {
+  position: absolute;
+  bottom: 3vw;
+  left: 3vw;
+  z-index: 999;
+
+  font-size: 70px;
+}
+
+.animeModal .animeModal-con .bottom {
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  gap: 1vw;
+
+  width: 100%;
+
+
+}
+
+
+.animeModal .animeModal-con .bottom .bottom-line1 {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5vw;
+
+  /* font-size: ; */
+}
+
+.animeModal .animeModal-con .bottom .bottom-line1 .age {
+  width: 30px; 
+  height: 30px;
+
+  background-color: #373737;
+  border-radius: 5px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line2 {
+  display: flex;
+  gap: 1vw;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line2 button {
+  padding: 1vw 4vw;
+  box-sizing: border-box;
+
+  border: 0;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 85, 1);
+  color: #fff;
+
+  cursor: pointer;
+
+  font-size: 1.56vw;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line2 > button:nth-child(2) img {
+  display: none;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line2 > button:hover {
+  background-color: #fff;
+  color: rgb(255, 0, 85, 1);
+}
+
+.animeModal .animeModal-con .bottom .bottom-line3 {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5vmin;
+  box-sizing: border-box;
+
+  
+}
+
+.animeModal .animeModal-con .bottom .bottom-line3 .buttons {
+  display: flex;
+  gap: 5vmin;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line3 .buttons button {
+  cursor: pointer;
+}
+
+
+.animeModal .animeModal-con .bottom .bottom-line3 .buttons-child {
+  flex:1;
+
+  border: 2px solid #fff;
+
+  padding: 1vmax 1.5vmax;
+  box-sizing: border-box;
+
+  color: #fff;
+  background-color: unset;
+}
+
+.animeModal .animeModal-con .bottom .bottom-line3 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.56vw;
+}
+
+.animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con {
+  display: flex;
+  gap: 5px;
+
+  box-sizing: border-box;
+
+  padding-bottom: 30px;
+}
+
+.animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-image{
+  /* width: 300px; */
+  flex: 1;
+}
+
+.animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-image img {
+  display: block;
+  width: 100%;
+
+  mask-image: linear-gradient(to bottom, rgba(22, 22, 22, 1), rgba(22, 22, 22, 0));
+}
+
+.animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-right {
+  flex: 3;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-right span:first-child {
+  font-size: 30px;
+}
+
+.animeModal .animeModal-con span.close {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 50px;
+  
+  color: #fff;
+  
+  box-sizing: border-box;
+
+  position: fixed;
+ 
+  top: 150px;
+  right: 19.7916vw;
+
+
+  cursor: pointer;
+
+  z-index: 1000;
+}
+
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+
+  .animeModal .animeModal-con {
+    flex: none;
+    width: 100%;
+
+    height: calc(100vh - 80px - 80px);
+
+    padding: 0 30px;
+  }
+
+  .animeModal .animeModal-con .modal-wrap {
+    width: 100%;
+
+    
+  }
+
+  .animeModal .animeModal-con .modal-wrap .top {
+    height: auto;
+
+    border-radius: 15px 15px 0 0;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line1 {
+    font-size: 2.9vw;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line1 .age {
+    width: 4.88vw;
+    height: 4.88vw;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button {
+    padding: 2.9vw 4.88vw;
+
+    font-size: 2.44vw;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line3 span {
+    font-size: 2.44vw;
+  }
+
+  .animeModal .animeModal-con span.close {
+    top: 9.76vw;
+    right: 1.95vw;
+  }
+
+  
+ 
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .animeModal {
+    background-color: unset;
+  }
+
+  .animeModal .animeModal-con {
+    flex: none;
+
+    width: 100%;
+    height: calc(100vh - 80px - 80px);
+   
+
+    /* padding: 0 10px; */
+
+    border-radius: unset;
+  }
+  .animeModal .animeModal-con .modal-wrap {
+    width: 100%;
+
+    /* height: 500px; */
+    /* width: 100%;
+    height: */
+  }
+
+  .animeModal .animeModal-con .modal-wrap .top {
+    /* height: 360px; */
+    /* max-height: 360px; */
+    height: auto;
+    border-radius: 20px 20px 0 0 ;
+  }
+  
+  .animeModal .animeModal-con .top h2 {
+  
+    font-size: 50px;
+  }
+
+
+
+  .animeModal .animeModal-con .bottom .bottom-line2 {
+    width: 100%;
+    display: flex;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button {
+    padding: 20px 10px;
+
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button:nth-child(1) {
+    flex: 3;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button:nth-child(2) {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button:nth-child(2) span {
+    display: none;
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line2 button:nth-child(2) img {
+    display: flex;
+  }
+
+  .animeModal .animeModal-con span.close {
+    
+    font-size: 50px;
+ 
+    top: 100px;
+    right: 20px;
+  
+   
+  }
+
+  .animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con {
+    display: block;
+  }
+
+  .animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-image {
+    /* width: 400px; */
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    
+  }
+
+  .animeModal .animeModal-con .bottom .bottom-line4 {
+    padding-bottom: 50px;
+  }
+  
+
+  .animeModal .animeModal-con .modal-wrap h2 {
+    font-size: 30px;
+  }
+
+  /* .animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-right {
+    flex: 1;
+  } */
+
+  .animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-right span:first-child {
+    position: relative;
+
+    bottom: 50px;
+    left: 20px;
+
+    font-weight: bold;
+  
+  }
+
+  .animeModal .animeModal-con .bottom .anime-recommend .anime-recommend-con .anime-recommend-right span:nth-child(2){
+    display: none;
+
+  }
+
+  
+
+} 

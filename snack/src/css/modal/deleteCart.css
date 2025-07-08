@@ -1,0 +1,55 @@
+.deleteModal{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deleteModal .deleteModal-con{
+  width: 600px;
+  height: 200px;
+  background-color: rgba(22, 22, 22);
+  position: relative;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.deleteModal .deleteModal-con span{
+  font-size: 20px;
+}
+.deleteModal .deleteModal-con .deleteBtn{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.deleteModal .deleteModal-con .deleteBtn button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: none;
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+}
+@media (max-width:768px){
+  .deleteModal .deleteModal-con{
+    width: 95%;
+    height: 150px;
+    padding: 15px 10px;
+  }
+  .deleteModal .deleteModal-con .deleteBtn button{
+    width: 140px;
+  }
+}

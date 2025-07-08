@@ -1,0 +1,20 @@
+.content {
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    height: calc(100vh - 80px - 80px);
+    width: 100%;
+  }
+
+  @supports (-webkit-touch-callout: none) {
+
+    .content {
+      height: calc(100vh - 80px - 80px - 80px);
+      width: 100%;
+    }
+  }
+  
+}

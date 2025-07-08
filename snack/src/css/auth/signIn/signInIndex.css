@@ -1,0 +1,151 @@
+.signIn {
+  width: 100%;
+}
+.signIn-con {
+  width: 100%;
+  height: calc(100vh - 80px - 162px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* padding-bottom: 30px;   */
+}
+
+.signIn-form {
+  flex: 0 1 600px;
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+
+  border-radius: 20px;
+
+  padding: 60px;
+  box-sizing: border-box;
+}
+
+.signIn-form > ul {
+  display: flex;
+  flex-direction: column;
+
+  /* gap: 1vw; */
+  gap: 20px;
+
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.signIn-form > ul > li {
+  display: flex;
+}
+
+.signIn-form > ul > li.main-list {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.signIn-form > ul > li.main-list > input {
+  flex: 1;
+  border: 0;
+
+  text-indent: 10%;
+  font-size: 16px;
+  font-weight: bold;
+
+
+  padding: 1vmax 0;
+  box-sizing: border-box;
+}
+
+
+.signIn-form > ul > li button {
+  flex: 1;
+  border: 0;
+
+  padding: 1.5vmax 0;
+  box-sizing: border-box;
+
+  border-radius: 2vw;
+
+  background-color: rgba(255, 0, 0, 54%);
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.signIn-form > ul > li:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.signIn-form > ul > li:last-child:hover {
+  cursor: pointer;
+
+  filter: brightness(80%);
+}
+
+
+
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+
+  .signIn-form {
+    flex: 0 1 450px;
+  }
+
+
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .signIn-con {
+
+    align-items: unset;
+  }
+
+
+
+  .signIn-form {
+    flex: 0 1 768px;
+    /* flex: unset; */
+    /* width: 100%; */
+
+    background-color: unset;
+    border-radius: unset;
+  
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  .signIn-form > ul > h1 {
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .signIn-form > ul > li.main-list > input {
+    padding: 2vmax 0;
+    
+  }
+
+  .signIn-form > ul > li button {
+    padding: 3vmax 0;
+  }
+
+  .signIn-form > ul > li:last-child {
+    padding-top: 60px;
+  }
+
+ 
+ 
+
+}

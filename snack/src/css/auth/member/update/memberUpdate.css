@@ -1,0 +1,202 @@
+.member-update {
+  width: 100%;
+
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.member-update .member-update-con {
+  width: 100%;
+  height: calc(100vh - 82px - 80px);
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* align-items: center; */
+
+}
+
+
+.member-update .member-update-con .member-update-form {
+  
+  flex: 0 1 600px;
+  border: 1px solid #fff;
+  
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  
+  border-radius: 20px;
+  
+  padding: 40px 60px;
+  box-sizing: border-box;
+
+  position: relative;
+
+}
+
+.member-update .member-update-con .member-update-form > ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1vw;
+
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.member-update .member-update-con .member-update-form > ul > li {
+  display: flex;
+
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+}
+
+.member-update .member-update-con .member-update-form > ul > li:not(:last-child) {
+  border: 2px solid rgba(255, 0, 0, 55%);
+  box-sizing: border-box;
+}
+
+/* 가상태그 미완성 */
+/* .member-update .member-update-con .member-update-form > ul > .check-tag > li > input{
+  display: none;
+}
+
+.member-update .member-update-con .member-update-form > ul > .check-tag > li > label {
+  cursor: pointer;
+}
+
+
+.member-update .member-update-con .member-update-form > ul > .check-tag > li > label::after {
+  display: inline-block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+
+  vertical-align: middle; 
+}
+
+.member-update .member-update-con .member-update-form > ul > .check-tag > li > input:checked + label::after {
+  content: "";
+  background: url(/public/images/auth/check_icon.png) no-repeat 50%/cover;
+} */
+
+/* 가상태그 미완성 */
+
+.member-update .member-update-con .member-update-form > ul > li > input {
+  flex: 1;
+  border: 0;
+
+  text-indent: 10%;
+  font-size: 16px;
+  font-weight: bold;
+
+
+  padding: 1vw 0;
+  box-sizing: border-box;
+
+  background-color: #3f3f3f;
+  color: #fff;
+}
+
+.member-update .member-update-con .member-update-form > ul > li > input::placeholder {
+  color: #fff;
+}
+
+.member-update .member-update-con .member-update-form > ul > li button {
+  flex: 1;
+  border: 0;
+
+  padding: 1vw 0;
+  /* padding: 1.5vw 0; */
+  box-sizing: border-box;
+
+  border-radius: 2vw;
+
+  background-color: rgba(255, 0, 0, 54%);
+  color: #fff;
+  
+  cursor: pointer;
+}
+
+.member-update .member-update-con > .member-update-form > button {
+  border: 2px solid #fff;
+  background-color: #3f3f3f;
+  border-radius: 10px;
+  padding: 1vmax 2vmax;
+  box-sizing: border-box;
+
+  color: #fff;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5vw);
+}
+
+
+
+/* 태블릿 */
+@media (max-width: 1024px) {
+
+  .member-update .member-update-con .member-update-form {
+    flex: 0 1 450px;
+  }
+
+  .member-update .member-update-con > .member-update-form > button {
+    top: unset;
+    bottom: 0;
+  }
+
+
+}
+
+/* 모바일 */
+@media (max-width: 768px) {
+  .member-update .member-update-con {
+
+    align-items: unset;
+  }
+
+
+
+  .member-update .member-update-con .member-update-form {
+    flex: 0 1 768px;
+    /* flex: unset; */
+    /* width: 100%; */
+
+    background-color: unset;
+    border-radius: unset;
+  
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  .member-update .member-update-con .member-update-form > ul > h1 {
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .member-update .member-update-con .member-update-form > ul > li > input {
+    padding: 2vmax 0;
+    
+  }
+
+  .member-update .member-update-con > .member-update-form > button {
+    top: unset;
+    bottom: 30px;
+    right: 10px;
+
+  }
+
+ 
+ 
+
+}

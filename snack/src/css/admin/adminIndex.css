@@ -1,0 +1,158 @@
+.adminIndex{
+    
+    width: 100%;
+    height: calc(100vh - 80px - 60px);
+    box-sizing: border-box;
+}
+
+.adminIndex .adminIndex-con{
+    width: 100%;
+    height: 100%;
+   
+    padding: 30px 0px;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+    
+}
+.adminIndex .adminIndex-con .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.adminIndex .adminIndex-con .title h1{
+font-size: 40px;
+}
+.adminIndex .adminIndex-con .category{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.adminIndex .adminIndex-con .category ul{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: repeat(2,300px);
+    grid-auto-rows: auto;
+    gap: 50px;
+}
+.adminIndex .adminIndex-con .category ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(255, 255, 255); */
+    /* background:linear-gradient(rgb(170, 1, 119), rgb(138, 0, 0)); */
+
+    border-radius: 20px ;
+    font-size: 30px;
+    font-weight:800;
+    transition: all 0.3s;
+   
+}
+.adminIndex .adminIndex-con .category ul li>a{
+    width: 180px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.445);
+    color: rgb(0, 0, 0);
+    border-radius: 25px ;
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(1) {
+    background: url(/public/images/admin/people-2557396_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(2) {
+    background: url(/public/images/admin/baskets-6765014_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+    
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(3) {
+    background: url(/public/images/admin/checkout-4762569_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+    
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(4) {
+    background: url(/public/images/admin/tablet-7025855_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+    
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(5) {
+    background: url(/public/images/admin/video-943569_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+    
+}
+.adminIndex .adminIndex-con .category ul li:nth-child(6) {
+    background: url(/public/images/admin/movie-theater-1241422_1920.jpg)no-repeat 50%/cover;
+    filter: grayscale(70%);
+    
+}
+
+.adminIndex .adminIndex-con .category ul li:hover{
+    /* background:linear-gradient( rgb(138, 0, 0),rgb(170, 1, 119)); */
+    transform: scale(1.03);
+    filter: grayscale(0);
+
+}
+
+@media (max-width: 769px) {
+    
+    .adminIndex{
+        width: 100%;
+        
+        height: calc(100vh - 80px - 80px - 6px);
+       
+    }
+    .adminIndex .adminIndex-con{
+        
+            width: 100%;
+            height: 100%;
+           
+            padding: 3px 0px;
+           display: flex;
+           flex-direction: column;
+           gap: 3px;
+            
+        
+    }
+    .adminIndex .adminIndex-con .category ul{
+        width: 100%;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-auto-rows: auto;
+        gap: 20px;  
+        
+    }
+    .adminIndex .adminIndex-con .category ul li:hover{
+        transform: scale(1.03);
+        filter: grayscale(0%);
+    
+        
+    }
+  }
+  @media (max-width: 460px){
+    .adminIndex .adminIndex-con .category ul{
+        width: 100%;
+        display: grid;
+        padding: 20px;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        grid-auto-rows: auto;
+        gap: 20px;  }
+        .adminIndex .adminIndex-con .title h1{
+            font-size: 30px;
+            }
+
+            .adminIndex .adminIndex-con .category ul li>a{
+                width: 120px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                background-color: rgba(255, 255, 255, 0.445);
+                color: rgb(0, 0, 0);
+                border-radius: 25px ;
+                font-size: 20px;
+            }
+  }

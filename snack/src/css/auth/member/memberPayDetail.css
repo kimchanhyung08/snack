@@ -1,0 +1,47 @@
+.member-index-right .member-index-right-con .payment-detail {
+  display: flex;
+  justify-content: space-between;
+
+  height: 500px;
+
+  gap: 1vw;
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-left {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1vw;
+
+  flex: 1;
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-left > h2 {
+
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-left > ul > li {
+  border: 1px solid #fff;
+  box-sizing: border-box;
+
+  padding: 10px;
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-right {
+  display: flex;
+  /* align-items: center; */
+
+  padding-top: 50px;
+
+  flex: 1;
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-right .payDetail-image {
+  width: 100%;
+  /* height: 200px; */
+}
+
+.member-index-right .member-index-right-con .payment-detail .payDetail-right .payDetail-image img {
+  display: block;
+  width: 100%;
+}

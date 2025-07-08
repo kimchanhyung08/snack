@@ -1,0 +1,299 @@
+.member-detail{
+    width: 100%;
+    height: calc(100vh - 80px);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member-detail .member-detail-con{
+    padding: 60px 0px;   
+    flex: 0 1 600px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items:center ;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    
+  
+  
+}
+.member-detail .member-detail-con ul{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items:center ;
+    gap: 10px;
+}
+.member-detail .member-detail-con ul>li:nth-child(1){
+    background-color: #ffffff;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.member-detail .member-detail-con >ul li{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.member-detail .member-detail-con >ul li a{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.member-button{
+    width: 200px;
+
+    display: flex;
+    /* gap: 10px; */
+}
+.member-button li button{
+    background-color: rgb(170, 1, 119);
+    width: 80px;
+    height: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.update-membermo{
+     width: 100%;
+    height: 100vh;
+ display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: fixed;
+    z-index: 1099;
+    left: 0;
+    top: 0;
+   
+}
+.update-membermo .update-membermo-con{
+    padding: 25px 0px;
+   width: 300px;
+   height: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.update-membermo .update-membermo-con .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.update-membermo .update-membermo-con .button button{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    /* color: #ffffff; */
+    /* border-radius: 5px; */
+}
+
+.delete-member{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 999;
+    left: 0;
+    top: 0;
+}
+.delete-member .delete-member-con{
+    padding: 20px;
+   width: 350px;
+   height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    gap: 10px;
+    
+}
+.delete-member .delete-member-con img{
+    width: 60px;
+    height: 60px;
+
+}
+.delete-member .delete-member-con .button{
+    display: flex;
+    justify-content: center;
+}
+.delete-member .delete-member-con .button button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .member-detail{
+        width: 100%;
+        height: calc(100vh - 80px - 80px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .member-detail .member-detail-con{
+        padding: 20px 0px;   
+        flex: 0 1 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items:center ;
+        /* border: 1px solid #000000; */
+        box-sizing: border-box;
+        
+      
+      
+    }
+    .member-detail .member-detail-con ul{
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items:center ;
+        gap: 10px;
+    }
+    .member-detail .member-detail-con ul>li:nth-child(1){
+        background-color: #ffffff;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .member-detail .member-detail-con >ul li{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .member-detail .member-detail-con >ul li a{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    
+    .member-button{
+        width: 200px;
+    
+        display: flex;
+        /* gap: 10px; */
+    }
+    .member-button li button{
+        background-color: rgb(170, 1, 119);
+        width: 80px;
+        height: 30px;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 460px) {
+    .member-detail{
+        width: 100%;
+        height: calc(100vh - 80px - 80px);
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .member-detail .member-detail-con{
+        padding:  0px;   
+        width: 80vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items:center ;
+        border: 0px solid;
+        box-sizing: border-box;
+        
+      
+      
+    }
+    .member-detail .member-detail-con ul{
+        width: 80vw;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       align-items:center ;
+        gap: 10px;
+    }
+    .member-detail .member-detail-con ul>li:nth-child(1){
+        background-color: #ffffff;
+        width: 80vw;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+    .member-detail .member-detail-con >ul li{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .member-detail .member-detail-con >ul li h1{
+        font-size: 120%;
+    }
+    .member-detail .member-detail-con >ul li a{
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    
+    .member-button{
+        width: 200px;
+    
+        display: flex;
+        /* gap: 10px; */
+    }
+    .member-button li button{
+        background-color: rgb(170, 1, 119);
+        width: 80px;
+        height: 30px;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+}

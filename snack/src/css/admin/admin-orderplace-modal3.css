@@ -1,0 +1,281 @@
+.add-place {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.521);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.add-place .add-place-con{
+    gap: 10px;
+    width: 600px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+    
+}
+
+.add-place .add-place-con ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.add-place .add-place-con ul li{
+   width: 100%;
+   height: 40px;
+  
+}
+.add-place .add-place-con ul li input{
+width: 100%;
+height: 100%;
+gap: 10px;
+}
+.add-place .add-place-con ul li select{
+width: 100px;
+height: 30px;
+}
+.add-place .add-place-con ul li:nth-last-child(1){
+    width: 170px;
+    height: 35px;
+    display: flex;
+   
+    gap: 10px;
+ }
+.add-place .add-place-con ul li:nth-last-child(1) button{
+    background-color: rgb(170, 1, 119);
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+.addplace1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1099;
+    left: 0;
+    top: 0;
+}
+.addplace1 .addplace1-con{
+    padding: 20px;
+   width: 250px;
+   height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    z-index: 1999;
+
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.addplace1 .addplace1-con .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.addplace1 .addplace1-con .button button{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.addplace2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1099;
+    left: 0;
+    top: 0;
+}
+.addplace2 .addplace2-con{
+    padding: 20px;
+   width: 250px;
+   height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    z-index: 1999;
+
+    font-size: large;
+    font-weight: 700;
+    
+}
+.addplace2 .addplace2-con .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.addplace2 .addplace2-con .button button{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.addplace3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 1099;
+    left: 0;
+    top: 0;
+}
+.addplace3 .addplace3-con{
+    padding: 20px;
+   width: 250px;
+   height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1999;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: large;
+    font-weight: 700;
+    
+}
+.addplace3 .addplace3-con .button{
+    display: flex;
+    justify-content: flex-end;
+}
+.addplace3 .addplace3-con .button button{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .add-place {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgba(255, 255, 255, 0.521); */
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+    }
+    .add-place .add-place-con{
+        gap: 10px;
+        width: 80vw;
+        height: 600px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid;
+        box-sizing: border-box;
+        
+    }
+    .add-place .add-place-con{
+        font-size: 80%;
+    }
+    
+    .add-place .add-place-con ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .add-place .add-place-con ul li{
+        width: 100%;
+        height: 30px;
+       
+     }
+
+}
+@media (max-width: 460px){
+    .add-place {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: rgba(255, 255, 255, 0.521); */
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 999;
+    }
+    .add-place .add-place-con{
+        gap: 10px;
+        width: 80vw;
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 15px;
+        border-radius: 10px;
+        border: 1px solid;
+        box-sizing: border-box;
+        
+    }
+    .add-place .add-place-con{
+        font-size: 60%;
+    }
+    
+    .add-place .add-place-con ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .add-place .add-place-con ul li{
+        width: 100%;
+        height: 20px;
+       
+     }
+
+}

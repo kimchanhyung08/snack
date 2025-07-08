@@ -1,0 +1,170 @@
+.webtoonModal {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.webtoonModal .webtoonModal-con {
+  width: 90%;
+  height: 90%;
+  background-color: rgba(22, 22, 22);
+  position: relative;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 100px;
+  overflow: auto;
+}
+
+.webtoonModal .webtoonModal-con .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.webtoonModal .webtoonModal-con .item span.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  padding: 0.4vh 0.4vh;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.webtoonModal .webtoonModal-con .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.webtoonModal .webtoonModal-con .top img {
+  width: 400px;
+  height: 218px;
+  z-index: 9999;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: block;
+  mask-image: linear-gradient(to bottom, rgba(22, 22, 22, 1), rgba(22, 22, 22, 0));
+}
+
+.webtoonModal .webtoonModal-con .top span.title {
+  display: flex;
+  font-size: 70px;
+  width: calc(100% - 2rem);
+  left: 1rem;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
+}
+
+.webtoonModal .webtoonModal-con .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.webtoonModal .webtoonModal-con .bottom .detail>ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.webtoonModal .webtoonModal-con .bottom .detail>ul>li:first-child {
+  width: 30px;
+  height: 30px;
+  background-color: #373737;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.webtoonModal .webtoonModal-con .bottom .cartBtn {
+  display: flex;
+  gap: 20px;
+}
+
+.webtoonModal .webtoonModal-con .bottom .cartBtn > button {
+  width: auto;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F05;
+  border: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.webtoonModal .webtoonModal-con .bottom .cartBtn .itemCount {
+  display: flex;
+  gap: 10px;
+}
+
+.webtoonModal .webtoonModal-con .bottom .cartBtn .itemCount > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F05;
+  border: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.webtoonModal .webtoonModal-con .bottom .cartBtn .itemCount > span {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.webtoonModal .webtoonModal-con .bottom .comment > span{
+  font-size: 1.5vw;
+  color: #cecece;
+
+}
+.webtoonModal .webtoonModal-con .item .bottom .random > ul  {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.webtoonModal .webtoonModal-con .item .bottom .random > ul > li >.itemImg>img {
+  width: 100px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  .webtoonModal .webtoonModal-con .top img {
+    width: 320px;
+    height: 175px;
+  }
+
+  .webtoonModal .webtoonModal-con .top span.title {
+    font-size: 30px;
+    width: calc(100% - 0.5rem);
+    left: 0.5rem;
+  }
+}

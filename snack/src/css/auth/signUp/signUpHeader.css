@@ -1,0 +1,47 @@
+.signUp-header {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.signUp-header .signUp-header-con {
+  flex: 0 1 1600px;
+  /* height: 100px; */
+
+  padding: 60px 0;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.signUp-header .signUp-header-con h1.logo a{
+  /* width: 260px; */
+  /* height: 80px; */
+}
+
+.signUp-header .signUp-header-con h1.logo img {
+  width: 120px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.signUp-header .signUp-header-con .signUpbtn {
+  border: 2px solid #fff;
+
+  /* padding: 1vw 2vw; */
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUp-header .signUp-header-con .signUpbtn a {
+  color: inherit;
+}
+
+
+

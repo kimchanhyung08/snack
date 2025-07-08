@@ -1,0 +1,58 @@
+.payment {
+  width: 100%;
+}
+
+.payment .payment-con {
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-Content: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.payment .payment-con .top{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.payment .payment-con .content > ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 80px);
+  box-sizing: border-box;
+}
+
+.payment .payment-con .content > ul > li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.payment .payment-con .content > ul.dataList > li:last-child{
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.payment .payment-con .content > ul.dataList > li:last-child:hover{
+  color: rgb(140, 140, 140);
+  cursor: pointer;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .payment .payment-con .content > ul {
+    font-size: 12px;
+  }
+}
+
+@media  (max-width: 768px) {
+  .payment .payment-con .content > ul {
+    font-size: 10px;
+  }
+}

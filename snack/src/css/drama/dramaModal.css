@@ -1,0 +1,286 @@
+.dramaModal{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(172, 172, 172, 0.377);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dramaModal .dramaModal-con {
+  /* flex: 0 1 800px; */
+  width: 40vw;
+  height: 700px;
+  /* aspect-ratio: 16/9; */
+  background-color: rgba(22, 22, 22);
+  position: relative;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* padding: 80px; */
+}
+.dramaModal .dramaModal-con .item::-webkit-scrollbar{
+  display: none;
+}
+.dramaModal .dramaModal-con .item {
+  overflow: auto;
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dramaModal .dramaModal-con .item span.close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  color: white;
+  padding: 0.4vh 0.4vh;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+}
+
+.dramaModal .dramaModal-con .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.dramaModal .dramaModal-con .top img.modalImg {
+  object-fit: cover;
+  width: 100%;
+  /* height: 400px; */
+  z-index: 9999;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  display: block;
+  mask-image: linear-gradient(to left bottom, rgba(22, 22, 22, 1), rgba(22, 22, 22, 0));
+}
+
+.dramaModal .dramaModal-con .top span.title {
+  display: flex;
+  font-size: 3vw;
+  font-weight: bolder;
+  /* width: calc(100% - 2rem); */
+  width: 200px;
+  left: 0;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  z-index: 10000;
+}
+.dramaModal .dramaModal-con .top span.title img{
+  width: 100%;
+  /* height: 70px; */
+  display: block;
+  object-fit: contain;
+}
+.dramaModal .dramaModal-con .bottom {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dramaModal .dramaModal-con .bottom .detail>ul {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.dramaModal .dramaModal-con .bottom .detail>ul>li:first-child {
+  width: 30px;
+  height: 30px;
+  background-color: #373737;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+}
+
+.dramaModal .dramaModal-con .bottom .cartBtn {
+  display: flex;
+  gap: 20px;
+}
+.dramaModal .dramaModal-con .bottom .cartBtn button:last-child img{
+  display: none;
+}
+.dramaModal .dramaModal-con .bottom .cartBtn button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F05;
+  border: 0;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dramaModal .dramaModal-con .bottom .price .itemCount {
+  display: flex;
+  gap: 10px;
+}
+
+.dramaModal .dramaModal-con .bottom .price .itemCount button {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background: #F05;
+  border: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dramaModal .dramaModal-con .bottom .price .itemCount span {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dramaModal .dramaModal-con .bottom .comment span{
+  font-size: 20px;
+  color: #cecece;
+
+}
+
+.dramaModal .dramaModal-con .bottom .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dramaModal .dramaModal-con .bottom .price span {
+  width: auto;
+  /* height: 40px; */
+  font-size: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 10px;
+}
+.dramaModal .dramaModal-con .item .recommend{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+}
+.dramaModal .dramaModal-con .item .recommend span.item{
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+}
+.dramaModal .dramaModal-con .item .recommend ul{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows: 80px;
+  gap: 10px;
+}
+.dramaModal .dramaModal-con .item .recommend ul li{
+  display: flex;
+  gap: 10px;
+}
+.dramaModal .dramaModal-con .item .recommend ul li .reco-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.dramaModal .dramaModal-con .item .recommend ul li .reco-detail :last-child{
+  font-size: 12px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+.dramaModal .dramaModal-con .item .recommend ul li img{
+  display: block;
+  object-fit: contain;
+  border-radius: 5px;
+}
+@media (max-width:1024px){
+  .dramaModal .dramaModal-con .item span.close{
+    right: 10px;
+    top: 5px;
+  }
+  .dramaModal .dramaModal-con {
+    width: 70vw;
+    aspect-ratio: 16/9;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn{
+    gap: 10px;
+  }
+}
+@media (max-width:768px){
+  .dramaModal{
+    padding: 10px 0 0 0;
+    /* align-items: flex-start; */
+  }
+  .dramaModal .dramaModal-con{
+    width: 95vw;
+    height: 600px;
+  }
+  .dramaModal .dramaModal-con .item span.close{
+    top: 1px;
+    right: 10px;
+    font-size: 20px;
+  }
+  .dramaModal .dramaModal-con .bottom .detail>ul{
+    font-size: 13px;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn button{
+    height: 30px;
+    font-size: 13px;
+  }
+  .dramaModal .dramaModal-con .bottom .price span{
+    font-size: 13px;
+  }
+  .dramaModal .dramaModal-con .bottom .price .itemCount span{
+    font-size: 13px;
+  }
+  .dramaModal .dramaModal-con .bottom{
+    gap: 5px;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn button:first-child{
+    flex: 5;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn button:last-child{
+    flex: 1;
+  }
+  .dramaModal .dramaModal-con .bottom .price .itemCount button{
+    width: 20px;
+    height: 20px;
+  }
+  .dramaModal .dramaModal-con .bottom .price .itemCount{
+    gap: 0;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn button:last-child img{
+    display: block;
+  }
+  .dramaModal .dramaModal-con .bottom .cartBtn button:last-child span{
+    display: none;
+  }
+  .dramaModal .dramaModal-con .top span.title{
+    width: 100px;
+  }
+  .dramaModal .dramaModal-con .bottom .comment span{
+    font-size: 14px;
+  }
+}
