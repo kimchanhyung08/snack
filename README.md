@@ -22,6 +22,8 @@
 - 회원가입 및 로그인
 - OTT 서비스 구매 (결제)
 ## 내역할
+<img width="800" height="401" alt="Image" src="https://github.com/user-attachments/assets/8dded1cd-4b2a-4e24-9bce-3e9c1d12be4e" />  
+
 - 애니메이션 페이지 기능 및 화면 구현
 - 로그인 및 회원가입 페이지 기능 및 화면 구현
 - 회원 페이지 기능 및 화면 구현
