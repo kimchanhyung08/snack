@@ -22,13 +22,16 @@
 - 회원가입 및 로그인
 - OTT 서비스 구매 (결제)
 ## 내역할
-[애니메이션 페이지 기능 및 화면 구현]  
+[애니메이션 페이지]
+- ExtraReducers 사용하여 컨텐츠들을 호출
 <img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/8dded1cd-4b2a-4e24-9bce-3e9c1d12be4e" />
 
-[로그인 및 회원가입 페이지 기능 및 화면 구현]  
+[회원가입 페이지]
+- Axios를 사용하여 사용자 인증 및 저장
 <img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/59a4879d-c63e-4e20-9429-9e8b0ca8110f" />
 
-[회원 페이지 기능 및 화면 구현]  
+[회원(개인) 페이지]
+- 최근 본 작품들을 역순으로 정렬하는 로직 구성
 <img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/cea1940e-8b2e-4307-baf1-fec7305cd481" />
  
 ## 배운점 & 보완점
