@@ -23,7 +23,8 @@
 - OTT 서비스 구매 (결제)
 ## 내역할
 <img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/8dded1cd-4b2a-4e24-9bce-3e9c1d12be4e" />  
-<img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/cea1940e-8b2e-4307-baf1-fec7305cd481" />  
+<img width="600" height="301" alt="Image" src="https://github.com/user-attachments/assets/cea1940e-8b2e-4307-baf1-fec7305cd481" /> 
+<img width="1369" height="686" alt="Image" src="https://github.com/user-attachments/assets/59a4879d-c63e-4e20-9429-9e8b0ca8110f" />
 
 - 애니메이션 페이지 기능 및 화면 구현
 - 로그인 및 회원가입 페이지 기능 및 화면 구현
